@@ -1,0 +1,30 @@
+#Copiado da aula pois o modelo de workflow nao apareceu
+
+name : CI
+
+#Controle do workflow para rodar
+on:
+  # trigger para push ou pull request
+  push:
+     branches: [ main ]
+
+ # Permite que você execute o workflow manualmente na guia de ações
+ workflow_dispatch:
+
+ #Uma execução de workflow é composta de mais trabalhos que podem ser executados sequencialmente ou em paralelo
+ jobs:
+   #Workflow com um unico "build"
+   CI:
+      #Onde será executado
+      runs-on: ubuntu-latest
+
+      #Sequência de tarefas que serão executadas como parte do trabalho
+      steps:
+        #checkout do repositorio no #GITHUB_WORKSPACE, 
+        - users: acctions/checkout@v2
+
+        - name: Setup do nodeJS
+        - usus: actions/setup-node@v4.0.3
+        - with :
+            node-version: 16.15.1
+        
