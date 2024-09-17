@@ -20,7 +20,7 @@ jobs:
       #Sequência de tarefas que serão executadas como parte do trabalho
       steps:
         #checkout do repositorio no #GITHUB_WORKSPACE, 
-         - uses: acctions/checkout@v2
+         - uses: actions/checkout@v2
 
          - name: Setup do nodeJS
            uses: actions/setup-node@v4.0.3
