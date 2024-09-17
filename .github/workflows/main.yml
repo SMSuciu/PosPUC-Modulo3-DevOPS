@@ -24,5 +24,13 @@ jobs:
 
          - name: Setup do nodeJS
            uses: actions/setup-node@v4.0.3
-           with :
+           with:
              node-version: 16.15.1
+
+         - name: Instalação do Mocha para teste
+           run: 
+                #Entrando no diretorio src e instalando o mocha
+                cd src; 
+                npm install -g mocha; 
+                npm install
+                
