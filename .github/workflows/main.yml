@@ -30,8 +30,6 @@ jobs:
          - name: Instalação do Mocha para teste
            run: 
                 #Entrando no diretorio src e instalando o mocha
-                cd Exemplo de aula-conversao-temperatura-2-main;
-                cd conversao-temperatura-2-main;
                 cd src; 
                 npm install -g mocha; 
                 npm install
