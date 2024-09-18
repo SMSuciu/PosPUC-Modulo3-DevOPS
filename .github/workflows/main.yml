@@ -53,6 +53,6 @@ jobs:
               context: ./src
               file: ./src/Dockerfile
               push: true
-              tags:
-                smsuciu/aula-conversao-temperatura:v1
+              tags: |
+                smsuciu/aula-conversao-temperatura:${{github.run_number}}
                 smsuciu/aula-conversao-temperatura:latest
