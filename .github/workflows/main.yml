@@ -54,5 +54,5 @@ jobs:
               file: ./src/Dockerfile
               push: true
               tags:
-                smsuciu/aula-conversao--temperatura:v1
-                smsuciu/aula-conversao--temperatura:latest
+                smsuciu/aula-conversao-temperatura:v1
+                smsuciu/aula-conversao-temperatura:latest
