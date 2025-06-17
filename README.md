@@ -1,5 +1,4 @@
 # conversao-temperatura-2
-Iniciativa Devops - Fabricio Veronez - Kube Dev
 
 * Rodar Gerenciador de Pacotes: NPM 
 
